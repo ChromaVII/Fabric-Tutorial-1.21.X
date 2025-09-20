@@ -1,6 +1,7 @@
 package net.chroma.tutorialmod;
 
 import net.chroma.tutorialmod.block.ModBlocks;
+import net.chroma.tutorialmod.item.ModItemGroups;
 import net.chroma.tutorialmod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -14,6 +15,8 @@ public class TutorialMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+        ModItemGroups.registerItemGroups();
+
         ModItems.registerModItems();
         ModBlocks.registerModBlocks();
 	}
